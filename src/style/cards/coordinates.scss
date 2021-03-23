@@ -1,0 +1,41 @@
+@import '../reset';
+
+#coordinates-div{
+    grid-area: cd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 75px;
+}
+
+#coordinates-div span:nth-child(1){
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 2px solid white;
+}
+
+@media (max-width: 350px){
+    #coordinates-div{
+        grid-area: cd;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            text-align: center;
+        }
+    }
+    
+    #coordinates-div span:nth-child(1){
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid white;
+        border-right: none;
+        padding: 0 10px  10px;
+    }
+    
+}

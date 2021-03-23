@@ -1,0 +1,60 @@
+@import '../reset';
+
+#name{    
+    color: white;
+
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: -10px;
+
+    span{
+        margin: 0 5%;
+        font-size: 3rem;
+    }
+}
+
+#name span:nth-child(1){
+    border-bottom: 3px red solid;
+}
+
+#name span:nth-child(2){
+    font-size: 7rem;
+}
+
+@media (max-width: 850px){
+    #name{
+        margin-bottom: 10px;
+    }
+
+    #name span:nth-child(1){
+        font-size: 2.4rem;
+    }
+    #name span:nth-child(2){
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width: 500px){
+    #name span:nth-child(1){
+        font-size: 2rem;
+    }
+    #name span:nth-child(2){
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width: 380px){
+    #name span:nth-child(1){
+        font-size: 1.5rem;
+    }
+    #name span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    
+}

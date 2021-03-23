@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#temperatures-div {
+  grid-area: tp;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+}
+
+#temperatures-div img {
+  width: 100px;
+  height: 100px;
+  margin: 0 -5% 0 5%;
+}
+
+#temperatures-div span:nth-child(1) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: -25px 0 30px;
+  font-size: 3rem;
+  line-height: 100px;
+}
+
+@media (max-width: 600px) {
+  #temperatures-div {
+    margin: 0;
+  }
+  #temperatures-div img {
+    width: 50px;
+    height: 50px;
+  }
+  #temperatures-div span:nth-child(1) {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=temperatures.css.map */

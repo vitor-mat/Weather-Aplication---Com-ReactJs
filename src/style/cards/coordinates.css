@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#coordinates-div {
+  grid-area: cd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+#coordinates-div span:nth-child(1) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 2px solid white;
+}
+
+@media (max-width: 350px) {
+  #coordinates-div {
+    grid-area: cd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #coordinates-div span {
+    text-align: center;
+  }
+  #coordinates-div span:nth-child(1) {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    border-right: none;
+    padding: 0 10px  10px;
+  }
+}
+/*# sourceMappingURL=coordinates.css.map */

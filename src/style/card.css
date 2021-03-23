@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*
+n - Nomes;
+d - Dados;
+*/
+#card {
+  background: #311d3e;
+  opacity: 0.93;
+  width: 60%;
+  height: 550px;
+  border-radius: 10px;
+}
+
+#dados {
+  color: white;
+  width: 100%;
+  height: 380px;
+  /*
+        tb - tabela
+        tp - temperatura
+        cd - coordenadas
+    */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 80% 20%;
+      grid-template-rows: 80% 20%;
+      grid-template-areas: "tb tp" "cd cd";
+}
+
+@media (max-width: 600px) {
+  #dados {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 40% 40% 10%;
+        grid-template-rows: 40% 40% 10%;
+        grid-template-areas: "tp" "tb" "cd";
+  }
+}
+/*# sourceMappingURL=card.css.map */

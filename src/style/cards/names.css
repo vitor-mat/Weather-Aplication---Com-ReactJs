@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#name {
+  color: white;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -10px;
+}
+
+#name span {
+  margin: 0 5%;
+  font-size: 3rem;
+}
+
+#name span:nth-child(1) {
+  border-bottom: 3px red solid;
+}
+
+#name span:nth-child(2) {
+  font-size: 7rem;
+}
+
+@media (max-width: 850px) {
+  #name {
+    margin-bottom: 10px;
+  }
+  #name span:nth-child(1) {
+    font-size: 2.4rem;
+  }
+  #name span:nth-child(2) {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #name span:nth-child(1) {
+    font-size: 2rem;
+  }
+  #name span:nth-child(2) {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #name span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  #name span:nth-child(2) {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=names.css.map */

@@ -54,7 +54,7 @@ Pelo promt de comando entre na pasta do projeto, em seguida rode o comando npm i
 - [npm](https://docs.npmjs.com/)
 
 ## Autor
-![autor](/readme_files/vitor.jpg)
+<img alt="foto vitor" src="/readme_files/vitor.jpg)" width="250"/>
 
 Feito por Vitor Mateus
 
